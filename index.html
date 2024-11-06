@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>AI反诈宣传平台</title>
+    <link rel="stylesheet" href="lib/css/index.css" />
+    <link rel="stylesheet" href="lib/layui/css/layui.css">
+    <link rel='stylesheet' href="lib/iconfont.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="language">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">知识竞赛</a>
+                </li>
+                <li>
+                    <a href="#">常见问题</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+            </ul>
+
+            <div class="banner">
+                <div class="layui-carousel" id="ID-carousel-demo-image">
+                    <div carousel-item>
+                        <div><img src="images/deep.jpg"></div>
+                        <div><img src="images/man.jpg"></div>
+                        <div><img src="images/madam.jpg"></div>
+                    </div>
+                </div>
+                <script src="lib/layui/layui.js"></script>
+                <script>
+                    layui.use(function () {
+                        var carousel = layui.carousel;
+                        // 渲染 - 图片轮播
+                        carousel.render({
+                            elem: '#ID-carousel-demo-image',
+                            width: '720px',
+                            height: '360px',
+                            interval: 3000
+                        });
+                    });
+                </script>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="side">
+            <div class="side-left">
+                <div class="icons">
+                    <a href="#">
+                        <div class="icons_items">
+                            <img class="icons_items_imgs" src="images/图片2.png" alt="">
+                            <p class="account_title">大数据检测</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icons_items">
+                            <img class="icons_items_imgs" src="images/图片3.png" alt="">
+                            <p class="account_title">来电预警</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icons_items">
+                            <img class="icons_items_imgs" src="images/图片4.png" alt="">
+                            <p class="account_title">反诈常识</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icons_items">
+                            <img class="icons_items_imgs" src="images/图片5.png" alt="">
+                            <p class="account_title">关键词搜索</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="news-list" id="article-list">
+                    <div class="news-item">
+                        <a class="article-detail" href="#" data-tag="home.article_94TN3UIBAFQ1KAP4J0BW" data-id="94TN3UIBAFQ1KAP4J0BW">
+                            <div class="news-image"><img src="images/风险预警.png" alt=""></div>
+                            <div class="news-info">
+                                <div class="news-title">【风险预警】近期高发的诈骗手法</div>
+                                <div class="news-time"><div class="news-tag news-tag__blue"><span class="news-tag__txt">案例</span></div>2024-11-05 15:14:43</div>
+                                <div class="news-desc"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="news-item">
+                        <a class="article-detail" href="#" data-tag="home.article_8HQ9TS0QQ0PKXBUROH7P" data-id="8HQ9TS0QQ0PKXBUROH7P">
+                            <div class="news-image"><img src="images/采购陷阱.png" alt=""></div>
+                            <div class="news-info">
+                                <div class="news-title">“学校”大额采购，转手就能赚10万元，商家付款后却傻眼了</div>
+                                <div class="news-time"><div class="news-tag news-tag__blue"><span class="news-tag__txt">案例</span></div>2024-11-05 15:05:44</div>
+                                <div class="news-desc"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <br />
+                    <br />
+                    <div class="news-item">
+                        <a class="article-detail" href="#" data-tag="home.article_C9IMRGBLXKBWSCU1Q2AE" data-id="C9IMRGBLXKBWSCU1Q2AE">
+                            <div class="news-image"><img src="images/虚拟币.png" alt=""></div>
+                            <div class="news-info">
+                                <div class="news-title">利用虚拟币洗钱，警方已抓捕13人！</div>
+                                <div class="news-time"><div class="news-tag news-tag__blue"><span class="news-tag__txt">案例</span></div>2024-10-30 17:40:04</div>
+                                <div class="news-desc"></div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="news-more" data-tag="home.news_more">
+                        更多内容
+                    </div>
+
+                </div>
+            </div>
+            <div class="side-right">
+                <div class="report">
+                    <a href="#" class="report report-link">
+                        <i class="iconfont icon-jubao"></i>
+                        <br />
+                        <br />
+                        <h2>&nbsp;我要举报</h2>
+                        <p>&nbsp; &nbsp; 举报涉嫌ai视频诈骗的违法违规行为</p>
+                    </a>
+                </div>
+                <div class="box msg-board-box">
+                    <div class="box-hd">
+                        <h2 class="title msg-board-title">留言板</h2>
+                    </div>
+                    <ul class="msg-board">
+                        <li class="msg-item"><img src="images/132.png" alt="" class="msg-avatar"><div class="msg-info"><div class="msg-info-line"><span class="name" style="display:inline-block;">明月星辰</span><span class="time">2022-06-08 08:37:59</span></div><div class="msg-info__desc" title="从去年12月来派派游戏里提现提示帐号安全异常，提现不了，今天试了下，还是提现不了。打派派客服电话说是腾迅安全模块检测提示的，他们也解决不了。可是我微信支付和提现功能都是能正常使用的。请问怎么这个安全检测模块异常在哪里查询，怎么解除掉？">从去年12月来派派游戏里提现提示帐号安全异常，提现不了，今天试了下，还是提现不了。打派派客服电话说是腾迅安全模块检测提示的，他们也解决不了。可是我微信支付和提现功能都是能正常使用的。请问怎么这个安全检测模块异常在哪里查询，怎么解除掉？</div></div></li>
+
+                        <li class="msg-item"><img src="images/g.jpg" alt="" class="msg-avatar"><div class="msg-info"><div class="msg-info-line"><span class="name" style="display:inline-block;">ALL BLUE</span><span class="time">2022-06-04 00:27:01</span></div><div class="msg-info__desc" title="我举报有用户违规！竟然还要加好友！还需要扫微信！我就不明白了我是举报有用户违规为什么要那么多程序？？？你们这个举报机制设置的这么繁琐就是给有违规的用户逃避制裁是不是可以这么理解？？？又要扫微信，又要验证！我就不明白了你们到底是保护违规用户，还是专门阻拦正常用户举报不法行为？？？">我举报有用户违规！竟然还要加好友！还需要扫微信！我就不明白了我是举报有用户违规为什么要那么多程序？？？你们这个举报机制设置的这么繁琐就是给有违规的用户逃避制裁是不是可以这么理解？？？又要扫微信，又要验证！我就不明白了你们到底是保护违规用户，还是专门阻拦正常用户举报不法行为？？？</div></div></li>
+                    </ul>
+                    <div class="msg-more" data-tag="home.message_more">我要留言</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+            <div class="row">
+                <div class="columns" style="width:240px; height:140px;">
+                    <div class="custom-sidebar">
+                        <h3 class="custom-sidebar-title">联系我们</h3><div class="gdl-recent-post-widget">
+                                                                      <ul>
+                                                                          <li>
+                                                                              <img class="email-icon" alt="邮件图标" src="images/ico_mail.png">
+                                                                              <span class="email-address">2357904@qq.com</span>
+                                                                          </li>
+                                                                      </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</body>
+</html>
